@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of A Triangle</title>
+    <script src="index.js"></script>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        section {
+            border: 2px solid #e48f4d;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        #input-container {
+            padding: 20px;
+            text-align: center;
+            color: #e37a2a;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #e48f4d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a44b06;
+        }
+
+        h1 {
+            color: rgba(165, 42, 42, 0.334);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #result {
+            padding: 10px;
+            background-color: #e48f4d;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="input-container">
+            <h1 id="Heading">Area Of Triangle</h1>
+            <label for="base">Base:</label>
+            <input type="number" id="base" placeholder="Enter base">
+            <br>
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Enter height">
+            <br>
+            <button onclick="calculateArea()">Calculate</button>
+        </div>
+        <div id="result"><i>Show The Results</i></div>
+    </section>
+    <script src="/AreaOfATriangle/index.js"></script>
+</body>
+</html>
