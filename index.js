@@ -1,19 +1,15 @@
 function calculateArea(){
-    // Get the values of base and height from input fields
-    var base = parseFloat(document.getElementById('base').value);
-    var height = parseFloat(document.getElementById('height').value);
 
-    // Check if the input values are valid numbers
+    let base = parseFloat(document.getElementById('base').value);
+    let height = parseFloat(document.getElementById('height').value);
+
     if (isNaN(base) || isNaN(height)) {
         alert('Please enter valid numbers for base and height.');
         return;
     }
+    let area = 0.5 * base * height;
 
-    // Calculate the area of the triangle
-    var area = 0.5 * base * height;
-
-    // Display the result
-    var resultElement = document.getElementById('result');
+    let resultElement = document.getElementById('result');
     resultElement.innerHTML = 'Area: ' + area.toFixed(2);
     resultElement.style.display = 'block';
 }
